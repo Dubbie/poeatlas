@@ -1,0 +1,263 @@
+$bg-color: #171717;
+$fg-color: #fff;
+$primary-color: #589536;
+$primary-alt-color: #264fe8;
+
+* {
+  box-sizing: border-box;
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  color: darken($fg-color, 20%);
+  background: $bg-color;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.container {
+  padding: 0 5%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+h1 {
+  color: $fg-color;
+}
+
+.btn {
+  background: $primary-alt-color;
+  color: $fg-color;
+  padding: .5em 1em;
+  font-size: 1em;
+  border-radius: 2em;
+  border: 0;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background: lighten($primary-alt-color, 10%);
+  }
+}
+
+.box {
+  background: $fg-color;
+  color: lighten($bg-color, 20%);
+  border-radius: 2px;
+
+  .box-content {
+    padding: 1em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+}
+
+form {
+  .input-group {
+    margin-bottom: 1em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    label {
+      display: block;
+      font-size: .75em;
+      font-weight: 700;
+      margin-bottom: .5em;
+    }
+
+    input,
+    select {
+      border: 1px solid darken($fg-color, 10%);
+      color: $bg-color;
+      background: $fg-color;
+      padding: .5em 1em;
+      font-size: 1em;
+      border-radius: 2px;
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        border-color: darken($fg-color, 20%);
+      }
+
+      &:focus {
+        outline: 0;
+        border-color: lighten($primary-alt-color, 10%);
+        box-shadow: 0 0 4px lighten($primary-alt-color, 20%);
+      }
+
+      &.long {
+        width: 100%;
+      }
+
+      &[type='checkbox'] {
+        width: auto;
+        margin: 0 .5em 0 0;
+        padding: 0;
+      }
+    }
+
+    &.full {
+
+      label {
+        padding: .5em 1em 0 1em;
+      }
+
+      input {
+        background: transparent;
+        border-radius: 0;
+        border-width: 0 0 1px 0;
+
+        &:hover,
+        &:focus {
+          box-shadow: none;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+
+  thead {
+    font-size: .75em;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    td {
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+  }
+
+  tbody {
+    font-size: 14px;
+
+    tr {
+      transition: all 250ms ease-in-out;
+
+      &:hover {
+        background: darken($fg-color, 5%);
+      }
+
+      &.hidden {
+        display: none;
+      }
+
+      td {
+        border-top: 1px solid darken($fg-color, 10%);
+      }
+    }
+  }
+
+  td {
+    padding: 1em;
+  }
+}
+
+// Toolbar
+#toolbar-container {
+  background: $fg-color;
+  color: lighten($bg-color, 25%);
+  border-top: 1px solid darken($fg-color, 10%);
+
+  #toolbar {
+    display: flex;
+
+    .toolbar-button {
+      position: relative;
+      display: block;
+      padding: .5em 1em;
+      border-right: 1px solid darken($fg-color, 10%);
+      color: $bg-color;
+
+      &:first-of-type {
+        border-top-left-radius: 2px;
+      }
+
+      &:last-of-type {
+        border-top-right-radius: 2px;
+        // border-right: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: darken($fg-color, 10%);
+
+        &:hover:after {
+          display: block;
+        }
+      }
+
+      &:after {
+        display: none;
+        content: attr(data-tooltip-text);
+        position: absolute;
+        bottom: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $fg-color;
+        background: rgba(0, 0, 0, .5);
+        padding: .25em .5em;
+        border-radius: 2px;
+        white-space: nowrap;
+      }
+
+      &.red {
+        color: lighten(red, 10%);
+      }
+
+      &.green {
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+
+// New map form
+#new-map-form {
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: darken($fg-color, 10%);
+  max-height: 348px;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+
+  &.hidden {
+    border-bottom: 0;
+    max-height: 0;
+  }
+}
