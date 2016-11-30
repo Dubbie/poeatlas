@@ -1,3 +1,5 @@
+var events = require('./pubsub.js');
+
 var maps = (function () {
 
   var Map = function (map) {
@@ -19,7 +21,6 @@ var maps = (function () {
       };
 
       this.completed = c;
-      events.emit('completedChanged', this);
     };
 
     this.render = function () {
@@ -45,6 +46,7 @@ var maps = (function () {
       this.element.onclick = function (e) {
         if (e.target != link) {
           _this.complete(!_this.completed);
+          events.emit('completedChanged', [_this]);
         }
       };
 
@@ -70,8 +72,6 @@ var maps = (function () {
         var counter = document.createElement('span');
         counter.classList.add('map-tier-counter');
 
-        heading.appendChild(counter);
-
         var completeButton = document.createElement('img');
         completeButton.classList.add('map-tier-complete');
         completeButton.src = 'img/toggle_off.png';
@@ -80,7 +80,7 @@ var maps = (function () {
         };
 
         var expando = document.createElement('div');
-        expando.classList.add('map-expando');
+        expando.classList.add('map-expando', 'collapsed', 'animated');
 
         // BindEvent
         heading.onclick = function () {
@@ -91,6 +91,7 @@ var maps = (function () {
         this.mapTierContainer.classList.add('map-tier');
 
         this.mapTierContainer.appendChild(heading);
+        this.mapTierContainer.appendChild(counter);
         this.mapTierContainer.appendChild(completeButton);
         this.mapTierContainer.appendChild(expando);
 
@@ -142,6 +143,7 @@ var maps = (function () {
     mapsInTier.forEach(function (map) {
       map.complete(value);
     });
+    events.emit('completedChanged', mapsInTier);
 
     checkTierLabels();
   }
@@ -203,8 +205,8 @@ var maps = (function () {
           map.complete(isComplete(map));
         });
 
+        events.emit('completedChanged', maps);
         checkTierLabels();
-        setExpandoHeights();
       }
     };
 
@@ -213,31 +215,40 @@ var maps = (function () {
 
   function setExpandoHeights() {
     var expandos = [].slice.call(mapsContainer.querySelectorAll('.map-expando'));
-    expandos.forEach(function (expando) {
-      expando.style.maxHeight = expando.getBoundingClientRect().height + 'px';
 
-      // expando.classList.add('collapsed');
-      expando.classList.add('collapsed', 'animated');
+    // Go through each expando
+    expandos.forEach(function (expando) {
+      // Add all the heights of the children
+      var h = 0;
+      var children = [].slice.call(expando.children);
+      children.forEach(function(child) {
+        h += child.getBoundingClientRect().height;
+      });
+      expando.style.maxHeight = h + 'px';
+
+      // expando.classList.add('animated');
     });
 
     // Open up the first expando to show that it's a dropdown
-    maps[0].element.parentNode.classList.remove('collapsed')
+    maps[0].element.parentNode.classList.remove('collapsed');
   }
 
-  function updateCompleted(map) {
-    var i = 0;
-    var l = false;
+  function updateCompleted(alteredMaps) {
+    alteredMaps.forEach(function (map) {
+      var i = 0;
+      var l = false;
 
-    while (i < completed.length && !l) {
-      l = completed[i].name == map.name;
-      i++;
-    }
+      while (i < completed.length && !l) {
+        l = completed[i].name == map.name;
+        i++;
+      }
 
-    if (!l && map.completed) {
-      completed.push(map);
-    } else if (l && !map.completed) {
-      completed.splice(i - 1, 1);
-    }
+      if (!l && map.completed) {
+        completed.push(map);
+      } else if (l && !map.completed) {
+        completed.splice(i - 1, 1);
+      }
+    });
 
     checkTierLabels();
 
@@ -250,12 +261,16 @@ var maps = (function () {
     mapsToReset.forEach(function (map) {
       map.complete(false);
     });
+
+    events.emit('completedChanged', mapsToReset);
   }
 
   function completeAll() {
     maps.forEach(function (map) {
       map.complete(true);
     });
+
+    events.emit('completedChanged', maps);
   }
 
   function toggleExpandos(mode) {
@@ -320,6 +335,10 @@ var maps = (function () {
     events.on('toggleIncompletedTiers', toggleIncompletedTiers);
 
     getMaps('');
+
+    window.onload = function () {
+      setExpandoHeights();
+    }
   }
 
   init();

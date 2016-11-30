@@ -1,3 +1,5 @@
+var events = require('./pubsub.js');
+
 var search = (function () {
   // Other stuff
   var maps = [];

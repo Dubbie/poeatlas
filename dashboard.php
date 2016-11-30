@@ -18,6 +18,11 @@
       <div class="container">
         <h1 class="text-center">Dashboard</h1>
         <?php if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true): ?>
+          <?php
+            if (isset($_POST['remove'])) {
+              var_dump($_POST['remove']);
+            }
+          ?>
           <div class="box">
             <div class="box-content">
               <h2>Maps</h2>

@@ -69,14 +69,8 @@
       </footer>
     </div>
 
-    <!-- MyScripts  -->
-    <script src="js/utilities.js" async></script>
-    <script src="js/pubsub.js" async></script>
-    <script src="js/maps.js" async></script>
-    <script src="js/search.js" async></script>
-    <script src="js/atlas.js" async></script>
-    <script src="js/toolbar.js" async></script>
-
+    <!-- webpack script loader -->
+    <script src="js/scripts.min.js"></script>
     <!-- FontAwesome -->
     <script src="https://use.fontawesome.com/2e1e27e45d.js"></script>
     <!-- WebFont -->

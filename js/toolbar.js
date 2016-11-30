@@ -1,3 +1,5 @@
+var events = require('./pubsub.js');
+
 var toolbar = (function () {
 
   var completed = [];

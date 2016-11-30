@@ -342,13 +342,16 @@ header {
     }
 
     .map-tier-counter {
+      position: absolute;
+      top: 0;
+      right: 64px;
       font-size: .75em;
       font-weight: 700;
       color: darken($fg-color, 50%);
       background: darken($fg-color, 5%);
       padding: .25em 1em;
       border-radius: 10px;
-      margin-left: 1em;
+      margin: 14px 0;
       pointer-events: none;
       transition: all 250ms ease-in-out;
 
