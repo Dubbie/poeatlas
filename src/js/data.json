@@ -1,0 +1,884 @@
+[
+  {
+    "id": 1,
+    "name": "Arcade Map",
+    "tier": 1,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 2,
+    "name": "Crystal Ore Map",
+    "tier": 1,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 3,
+    "name": "Desert Map",
+    "tier": 1,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 4,
+    "name": "Jungle Valley Map",
+    "tier": 1,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 5,
+    "name": "Beach Map",
+    "tier": 2,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 6,
+    "name": "Factory Map",
+    "tier": 2,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 7,
+    "name": "Ghetto Map",
+    "tier": 2,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 8,
+    "name": "Oasis Map",
+    "tier": 2,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 9,
+    "name": "Arid Lake Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 10,
+    "name": "Cavern Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 11,
+    "name": "Channel Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 12,
+    "name": "Grotto Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 13,
+    "name": "Marshes Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 14,
+    "name": "Sewer Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 15,
+    "name": "Vaal Pyramid Map",
+    "tier": 3,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 16,
+    "name": "Vaults of Atziri",
+    "tier": 3,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 17,
+    "name": "Academy Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 18,
+    "name": "Acid Lakes Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 19,
+    "name": "Dungeon Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 20,
+    "name": "Graveyard Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 21,
+    "name": "Phantasmagoria Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 22,
+    "name": "Villa Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 23,
+    "name": "Waste Pool Map",
+    "tier": 4,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 24,
+    "name": "Burial Chambers Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 25,
+    "name": "Dunes Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 26,
+    "name": "Mesa Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 27,
+    "name": "Peninsula Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 28,
+    "name": "Pit Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 29,
+    "name": "Primordial Pool Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 30,
+    "name": "Spider Lair Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 31,
+    "name": "Tower Map",
+    "tier": 5,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 32,
+    "name": "Canyon Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 33,
+    "name": "Quarry Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 34,
+    "name": "Racecourse Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 35,
+    "name": "Ramparts Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 36,
+    "name": "Spider Forest Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 37,
+    "name": "Strand Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 38,
+    "name": "Whakawairua Tuahu",
+    "tier": 6,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 39,
+    "name": "Thicket Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 40,
+    "name": "Vaal City Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 41,
+    "name": "Wharf Map",
+    "tier": 6,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 42,
+    "name": "Arachnid Tomb Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 43,
+    "name": "Armoury Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 44,
+    "name": "Ashen Wood Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 45,
+    "name": "Castle Ruins Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 46,
+    "name": "Catacombs Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 47,
+    "name": "Olmec's Sanctum",
+    "tier": 7,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 48,
+    "name": "Cells Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 49,
+    "name": "Mud Geyser Map",
+    "tier": 7,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 50,
+    "name": "Arachnid Nest Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 51,
+    "name": "Arena Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 52,
+    "name": "Atoll Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 53,
+    "name": "Maelstr\u00f6m of Chaos",
+    "tier": 8,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 54,
+    "name": "Barrows Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 55,
+    "name": "Bog Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 56,
+    "name": "Cemetery Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 57,
+    "name": "Pier Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 58,
+    "name": "Shore Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 59,
+    "name": "Tropical Island Map",
+    "tier": 8,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 60,
+    "name": "Coves Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 61,
+    "name": "Crypt Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 62,
+    "name": "The Coward's Trial",
+    "tier": 9,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 63,
+    "name": "Museum Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 64,
+    "name": "The Putrid Cloister",
+    "tier": 9,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 65,
+    "name": "Orchard Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 66,
+    "name": "Overgrown Shrine Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 67,
+    "name": "Acton's Nightmare",
+    "tier": 9,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 68,
+    "name": "Promenade Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 69,
+    "name": "Hall of Grandmasters",
+    "tier": 9,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 70,
+    "name": "Reef Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 71,
+    "name": "Mao Kun",
+    "tier": 9,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 72,
+    "name": "Temple Map",
+    "tier": 9,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 73,
+    "name": "Poorjoy's Asylum",
+    "tier": 9,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 74,
+    "name": "Arsenal Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 75,
+    "name": "Colonnade Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 76,
+    "name": "Courtyard Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 77,
+    "name": "The Vinktar Square",
+    "tier": 10,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 78,
+    "name": "Malformation Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 79,
+    "name": "Quay Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 80,
+    "name": "Terrace Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 81,
+    "name": "Underground River Map",
+    "tier": 10,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 82,
+    "name": "Caer Blaidd, Wolfpack's Den",
+    "tier": 10,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 83,
+    "name": "Bazaar Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 84,
+    "name": "Chateau Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 85,
+    "name": "The Perandus Manor",
+    "tier": 11,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 86,
+    "name": "Excavation Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 87,
+    "name": "Precinct Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 88,
+    "name": "Torture Chamber Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 89,
+    "name": "Oba's Cursed Trove",
+    "tier": 11,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 90,
+    "name": "Underground Sea Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 91,
+    "name": "Wasteland Map",
+    "tier": 11,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 92,
+    "name": "Crematorium Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 93,
+    "name": "Estuary Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 94,
+    "name": "Ivory Temple Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 95,
+    "name": "Necropolis Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 96,
+    "name": "Death and Taxes",
+    "tier": 12,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 97,
+    "name": "Plateau Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 98,
+    "name": "Residence Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 99,
+    "name": "Shipyard Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 100,
+    "name": "Vault Map",
+    "tier": 12,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 101,
+    "name": "Beacon Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 102,
+    "name": "Gorge Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 103,
+    "name": "High Gardens Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 104,
+    "name": "Lair Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 105,
+    "name": "Plaza Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 106,
+    "name": "Scriptorioum Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 107,
+    "name": "Sulphur Wastes Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 108,
+    "name": "Waterways Map",
+    "tier": 13,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 109,
+    "name": "Maze Map",
+    "tier": 14,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 110,
+    "name": "Mineral Pools Map",
+    "tier": 14,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 111,
+    "name": "Palace Map",
+    "tier": 14,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 112,
+    "name": "Shrine Map",
+    "tier": 14,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 113,
+    "name": "Springs Map",
+    "tier": 14,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 114,
+    "name": "Volcano Map",
+    "tier": 14,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 115,
+    "name": "Abyss Map",
+    "tier": 15,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 116,
+    "name": "Colosseum Map",
+    "tier": 15,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 117,
+    "name": "Core Map",
+    "tier": 15,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 118,
+    "name": "Dark Forest Map",
+    "tier": 15,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 119,
+    "name": "Overgrown Ruin Map",
+    "tier": 15,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 120,
+    "name": "Forge of the Phoenix Map",
+    "tier": 16,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 121,
+    "name": "Lair of the Hydra Map",
+    "tier": 16,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 122,
+    "name": "Maze of the Minotaur Map",
+    "tier": 16,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 123,
+    "name": "Pit of the Chimera Map",
+    "tier": 16,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 124,
+    "name": "Vaal Temple Map",
+    "tier": 16,
+    "unique": 0,
+    "completed": false
+  },
+  {
+    "id": 125,
+    "name": "The Shaper's Realm",
+    "tier": 17,
+    "unique": 1,
+    "completed": false
+  },
+  {
+    "id": 126,
+    "name": "Hallowed Ground",
+    "tier": 4,
+    "unique": 1,
+    "completed": false
+  }
+]
